@@ -1,6 +1,6 @@
 # todo-app
 
-An Electron application with React
+A basic electron react application to add and manage task
 
 ## Recommended IDE Setup
 
