@@ -1,0 +1,229 @@
+@import './base.css';
+
+#root {
+  width: 100% !important;
+}
+
+/* Width, color and border-radius of the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+body {
+  display: flex;
+  overflow: hidden;
+}
+
+.back-black {
+  position: fixed;
+  background-color: #525252;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.back-black > ul {
+  padding: 10px;
+}
+
+.back-black > ul > li {
+  cursor: pointer;
+  background: #eee;
+  color: #414141;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.back-black > ul > li:hover {
+  background: #aaa;
+  color: #414141;
+}
+
+.header {
+  background-color: #414141;
+  height: 26px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99999;
+}
+
+.header ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: end;
+  z-index: 99999;
+}
+
+.header ul li {
+  cursor: pointer;
+  color: antiquewhite;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main {
+  width: 100% !important;
+  margin-top: 20px;
+  margin-top: 26px;
+  height: 98vh;
+  background: #eee;
+  padding: 5px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+
+.move-dragger {
+  display: flex;
+  justify-content: start;
+  -webkit-app-region: drag;
+  height: 26px;
+  width: 100%;
+}
+
+.move-dragger > .app-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.move-dragger > .app-title > P {
+  color: antiquewhite;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.move-dragger > .app-title > img {
+  height: 20px;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+#minimize:hover {
+  background-color: #616161;
+  color: antiquewhite;
+}
+
+#resize:hover {
+  background-color:#616161;
+  color: antiquewhite;
+}
+
+#file {
+  padding-top: 3px;
+}
+
+#file:hover {
+  background-color:#616161;
+  color: antiquewhite;
+}
+
+#close {
+  margin-right: 0px;
+  padding-top: 3px;
+}
+
+#close > svg {
+  height: 20px;
+}
+
+#resize {
+  padding-top: 5px;
+}
+
+#resize > svg {
+  height: 15px;
+}
+
+#minimize {
+  padding-top: 3px;
+}
+
+#minimize > svg {
+  height: 20px;
+}
+
+#close:hover {
+  background-color: #db3434;
+  color: antiquewhite;
+}
+
+.m-4 {
+  margin: 5px 20px !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.space-between {
+  justify-content: space-between !important;
+}
+
+.strike {
+  text-decoration:line-through
+}
+
+.red-span {
+  font-size: 12px;
+  color: #db3434 !important;
+}
+
+.no-padding{
+  padding: 0px !important;
+}
+
+.m-top-26 {
+  margin-top: 26px !important;
+}
+
+.totle-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear {
+  background:darkgreen;
+  padding: 3px;
+  margin-right: 3px;
+  color:antiquewhite;
+  border-radius: 5px;
+}
+
+.delete {
+  background:#db3434;
+  padding: 3px;
+  color:antiquewhite;
+  margin-right: 3px;
+  border-radius: 5px;
+}
